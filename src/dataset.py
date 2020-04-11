@@ -85,14 +85,15 @@ class TweetDataset:
         }
 
 if __name__ == '__main__':
-    print(config.TRAINING_FILE)
-    df = pd.read_csv(config.TRAINING_FILE).dropna().reset_index(drop=True)
-    # print(df.head())
-    dset = TweetDataset(
-        tweet = df.text.values,
-        sentiment = df.sentiment.values,
-        selected_text = df.selected_text.values
-    )
+    pass
+    # print(config.TRAINING_FILE)
+    # df = pd.read_csv(config.TRAINING_FILE).dropna().reset_index(drop=True)
+    # # print(df.head())
+    # dset = TweetDataset(
+    #     tweet = df.text.values,
+    #     sentiment = df.sentiment.values,
+    #     selected_text = df.selected_text.values
+    # )
 
     #print(dset[0])
 
